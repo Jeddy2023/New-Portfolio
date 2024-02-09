@@ -1,0 +1,90 @@
+HTML CODE
+
+<div class="background_linear">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="background_linear bl2">
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+
+
+<div class="hero_images">
+                <img src="assets/images/Frame 165.dee593b2a4ac105a151d449b6bd6866f.svg" alt="">
+                <img src="assets/images/chart-2.74b4ae56c008045caddb42315a1dd339.svg" alt="">
+            </div>
+
+
+
+
+
+
+CSS CODE
+
+
+
+
+.background_linear {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: absolute;
+    filter: blur(150px); 
+    top: 300px;
+    left: 1000px;
+}
+
+.bl2 {
+    filter: blur(200px);
+    top: -150px;
+    left: 50px;
+}
+
+.background_linear .box {
+    background-color: royalblue;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.background_linear .box:nth-child(1) {
+    background-color: crimson;
+}
+
+.background_linear .box:nth-child(2) {
+    background-color: orange;
+}
+
+.background_linear .box:nth-child(3) {
+    background-color: teal;
+}
+
+.hero_images {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.hero_images img:nth-child(1) {
+    margin-right: 15%;
+}
+
+.hero_images img:nth-child(2) {
+    margin-left: 20%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hero_images img {
+    animation: rotate 5s linear infinite;
+}

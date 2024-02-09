@@ -1,0 +1,158 @@
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+    padding: 170px 3% 90px 3% ;
+}
+.hero .text {
+    max-width: 650px;
+    z-index: 2;
+}
+
+.hero .text .profile {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.hero .text h1 {
+    font-family: acorn;
+    font-size: 4.6rem;
+}
+
+.hero .text p {
+    font-size: 2rem;
+}
+
+.hero .text p:nth-child(3) {
+    line-height: 1.7;
+    font-size: 1.06rem;
+    margin-top: 10px;
+}
+
+.hero .text button {
+    font-family: acorn;
+    background-color: white;
+    margin-top: 30px;
+    width: 250px;
+    height: 60px;
+    font-size: 18px;
+    color: black;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 50px;
+}
+.hero .skills{
+    min-width: 300px;
+    overflow: hidden;
+}
+.hero .skills .card {
+    font-family: acorn;
+    backdrop-filter: blur(20px);
+    background-color: white;
+    color: black;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.372);
+    border-radius: 10px;
+    gap: 10px;
+}
+.hero .skills .card i {
+    font-size: 25px;
+    color: green;
+}
+.hero .skills .card:nth-child(2) {
+    transform: translateX(50px);
+}
+
+.hero .skills .card:nth-child(3) {
+    transform: translateX(100px);
+}
+
+.projects{
+    margin-top: 50px;
+    position: relative;
+    padding: 0px 3%;
+}
+
+.projects .background_linear {
+    left: 800px;
+    top: -20px;
+    width: max-content;
+}
+
+.projects h1 {
+    font-family: acorn;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.containerc {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.containerc .card {
+    max-width: 900px;
+    min-height: 400px;
+    background-color: rgba(169, 169, 169, 0.041);
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-direction: column-reverse;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.containerc .card .text {
+    padding: 30px;
+}
+
+.containerc .card .text h2 {
+    font-size: 40px;
+    font-family: acorn;
+    color: var(--txt1);
+}
+
+.containerc .card .text p {
+    font-size: 20px;
+}
+
+.containerc .card .text button {
+    font-family: acorn;
+    margin-top: 40px;
+    font-size: 18px;
+    background-color: #7950f2;
+    color: white;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    padding: 12px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.containerc .card .card_img_container {
+    height: 300px;
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerc .card .card_img_container img {
+    width: 100%;
+    max-width: 400px;
+    min-height: 100%;
+    object-fit: contain;
+    transform: scale(1.02);
+    transition: all 0.3s ease-in-out 0s;
+    border-radius: 50px;
+}

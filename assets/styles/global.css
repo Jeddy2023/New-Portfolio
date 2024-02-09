@@ -1,0 +1,117 @@
+@import url('https://fonts.cdnfonts.com/css/livvic');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Livvic', sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: acorn;
+    src: url("../fonts/acorn.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    z-index: 100;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    border-radius: 50px;
+    padding: 18px 10px;
+    backdrop-filter: blur(20px);
+    z-index: 100;
+    transition:  0.5s ease-in-out ;
+}
+
+nav ul.active {
+    background-color: rgba(240, 224, 224, 0.233);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li a.active {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 600;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer_wrapper{
+    padding: 0 3%;
+}
+footer {
+    padding-top: 30px;
+    padding-bottom: 90px;
+}
+footer h1 {
+    font-family: acorn;
+    font-size: 60px;
+    margin-bottom: 10px;
+    z-index: 3;
+    position: relative;
+    color: white;
+}
+footer p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+footer .bottom_container {
+    display: grid;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 30px;
+}
+footer button {
+    font-size: 18px;
+    background-color: white;
+    color: black;
+    padding: 16px 60px;
+    border-radius: 50px;
+}
+footer .social_container {
+    list-style: none;
+}
+footer .social_container li {
+    margin-bottom: 15px;
+}
+footer .social_container a {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    gap: 5px;
+}
+footer .social_container i {
+    font-size: 32px;
+}

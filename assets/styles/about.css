@@ -1,0 +1,150 @@
+.about {
+    padding: 150px 3% 10px 3% ;
+}
+
+.about h1 {
+    font-family: acorn;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.7;
+    font-size: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.border{
+    border-left: 1px solid white;
+    border-bottom: 1px solid white;
+    width: 2.5rem;
+    height: 1.25rem;
+    margin-left: 3%;
+    margin-top: 1.5rem;
+}
+
+
+.skills {
+    margin-top: 50px;
+    padding: 10px 3%;
+}
+
+.skills h1 {
+    font-family: acorn;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    --tw-text-opacity: 1;
+    color: rgb(136 136 136 / var(--tw-text-opacity))
+}
+
+.skills h3 {
+    font-family: acorn;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.skills .skills_container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.skills .skills_container .card {
+    width: 31%;
+    color: white;
+    padding: 20px;
+    background-color: rgba(169, 169, 169, 0.041);
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.13);
+}
+
+.skills .skills_container .card .bar {
+    height: 10px;
+    background-color: rgb(39, 36, 36);
+    background-color: gainsboro;
+    border-radius: 50px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.skills .skills_container .card .bar .level {
+    border-radius: 50px;
+}
+
+.skills .skills_container .card:nth-child(1) .bar .level {
+    width: 90%;
+    height: 100%;
+    background-color: royalblue;
+}
+
+.skills .skills_container .card:nth-child(2) .bar .level {
+    width: 90%;
+    height: 100%;
+    background-color: teal;
+}
+
+.skills .skills_container .card:nth-child(3) .bar .level {
+    width: 60%;
+    height: 100%;
+    background-color: orange;
+}
+
+.skills .skills_container .card h2 {
+    font-family: acorn;
+    font-size: 18px;
+}
+
+.services {
+    max-width: 900px;
+    margin: 0px auto;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.services h1 {
+    font-family: acorn;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.services .service_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.services .service_container .card {
+    min-height: 250px;
+    background-color: royalblue;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.13);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.services .service_container .card h2 {
+    font-family: acorn;
+}
+
+.services .service_container .card:nth-child(2) {
+    background-image: linear-gradient(180deg, #f3cbab, #feedca);
+}
+
+.services .service_container .card:nth-child(1) {
+    background: linear-gradient(180deg, #dbb4f3, #efb7d7);
+}
+
+.services .service_container .card:nth-child(3) {
+    background: linear-gradient(180deg, #67c0e3, #ea76e2);
+}
+
+.services .service_container .card:nth-child(4) {
+    background: linear-gradient(90deg, #b1e5f9, #f4d2fe);
+}
+
+.services .service_container .card:nth-child(5) {
+    background: linear-gradient(180deg, #efa971, #e4cafe);
+}
