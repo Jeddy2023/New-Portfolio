@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="assets/styles/global.css">
     <link rel="stylesheet" href="assets/styles/about.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -41,40 +43,49 @@
             <h1>Skills</h1>
             <h3>- Languages</h3>
             <div class="skills_container">
-                <div class="card">
+                <div class="card" data-aos="fade-right" data-aos-delay="450">
+                    <i class='bx bxl-javascript' ></i>
                     <h2>Javascript</h2>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-right" data-aos-delay="350">
+                    <i class='bx bxl-typescript' ></i>
                     <h2>Typescript</h2>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-right" data-aos-delay="200">
+                    <i class='bx bxl-postgresql' ></i>
                     <h2>Sql</h2>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-right" data-aos-delay="200">
+                    <i class='bx bxl-java' ></i>
                     <h2>Java</h2>
                 </div>
             </div>
             <h3>- Frameworks & Others</h3>
             <div class="skills_container">
-                <div class="card">
+                <div class="card" data-aos="fade-right" data-aos-delay="800">
+                    <i class='bx bxl-nodejs' ></i>
                     <h2>Node js</h2>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-right" data-aos-delay="700">
                     <h2>Express js</h2>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-right" data-aos-delay="600">
+                    <i class='bx bxl-mongodb' ></i>
                     <h2>Mongo DB</h2>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-right" data-aos-delay="500">
                     <h2>UI / UX</h2>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-right" data-aos-delay="400">
+                    <i class='bx bxl-react' ></i>
                     <h2>React js</h2>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-right" data-aos-delay="300">
+                    <i class='bx bxl-sass' ></i>
                     <h2>SASS</h2>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-right" data-aos-delay="200">
+                    <i class='bx bxl-github' ></i>
                     <h2>Git & Github</h2>
                 </div>
             </div>
@@ -120,13 +131,13 @@
                     <ul class="social_container">
                         <li>
                             <a target="_blank" href="https://github.com/Jeddy2023">
-                                <i class="bi bi-github"></i>
+                                <i class='bx bxl-github' ></i>
                                 GitHub
                             </a>
                         </li>
                         <li>
-                            <a target="_blank" href="https://www.linkedin.com/in/jedidiah-ken-osuh-695413292/"><i
-                                    class="bi bi-linkedin"></i>
+                            <a target="_blank" href="https://www.linkedin.com/in/jedidiah-ken-osuh-695413292/">
+                                <i class='bx bxl-linkedin' ></i>
                                 LinkedIn
                             </a>
                         </li>
@@ -137,6 +148,10 @@
     </main>
 
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

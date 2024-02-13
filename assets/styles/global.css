@@ -8,6 +8,10 @@
     font-family: 'Livvic', sans-serif;
 }
 
+button{
+    cursor: pointer;
+}
+
 body {
     background-color: black;
     color: white;
@@ -70,6 +74,7 @@ nav ul li a.active {
     padding: 0 3%;
 }
 footer {
+    margin-top: 50px;
     padding-top: 30px;
     padding-bottom: 90px;
 }
