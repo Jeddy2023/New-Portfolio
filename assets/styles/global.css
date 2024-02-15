@@ -10,6 +10,7 @@
 
 html{
     scroll-behavior: smooth;
+    cursor: none;
 }
 
 button{
@@ -22,6 +23,7 @@ body {
     overflow-x: hidden;
     position: relative;
 }
+
 
 @font-face {
     font-family: acorn;
@@ -148,4 +150,25 @@ footer .social_container i {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+}
+
+.cursor-dot{
+    width: 5px;
+    height: 5px;
+    background-color: grey;
+}
+.cursor-outline{
+    width: 30px;
+    height: 30px;
+    border: 2px solid grey;
+}
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 9999;
+    pointer-events: none;
 }

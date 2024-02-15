@@ -43,3 +43,22 @@ scrolltotop.addEventListener("click", function () {
 
 window.onscroll = calc;
 window.onload = calc;
+
+
+
+const cursorDot = document.querySelector(".cursor-dot")
+const cursorOutline = document.querySelector(".cursor-outline")
+
+window.addEventListener("mousemove", function (e) {
+  const posX = e.clientX;
+  const posY = e.clientY;
+
+  cursorDot.style.left = `${posX}px`;
+  cursorDot.style.top = `${posY}px`;
+
+  setTimeout(() => {
+    cursorOutline.style.left = `${posX}px`;
+    cursorOutline.style.top = `${posY}px`;
+  }, 100);
+
+})
