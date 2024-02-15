@@ -12,3 +12,34 @@ window.addEventListener("scroll", function () {
   }
 
 });
+
+
+var scrolltotop = document.querySelector(".scrollToTop");
+console.log(scrolltotop)
+
+let calc = () => {
+  let pos = document.documentElement.scrollTop || document.body.scrollTop;
+
+  let calcH = document.documentElement.clientHeight - document.body.clientHeight;
+
+  // let percentVal = Math.round((Math.floor(pos) * 100) / calcH);
+  let percentVal = Math.abs(Math.round((Math.floor(pos) * 100) / calcH));
+  console.log(calcH)
+  console.log(percentVal)
+
+  if (pos > 100) {
+    scrolltotop.style.display = "flex";
+  } else {
+    scrolltotop.style.display = "none";
+  }
+
+  scrolltotop.style.background = `conic-gradient(white ${percentVal}%, grey ${percentVal}%)`;
+};
+
+scrolltotop.addEventListener("click", function () {
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+});
+
+window.onscroll = calc;
+window.onload = calc;

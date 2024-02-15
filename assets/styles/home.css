@@ -1,10 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;family=Open+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+
 .hero {
     display: flex;
     align-items: center;
     gap: 100px;
     position: relative;
-    padding: 170px 3% 90px 3% ;
+    padding: 170px 3% 90px 3%;
 }
+
 .hero .text {
     max-width: 650px;
     z-index: 2;
@@ -45,10 +48,12 @@
     border-image: initial;
     border-radius: 50px;
 }
-.hero .skills{
+
+.hero .skills {
     min-width: 300px;
     overflow: hidden;
 }
+
 .hero .skills .card {
     font-family: acorn;
     backdrop-filter: blur(20px);
@@ -62,10 +67,12 @@
     border-radius: 10px;
     gap: 10px;
 }
+
 .hero .skills .card i {
     font-size: 25px;
     color: green;
 }
+
 .hero .skills .card:nth-child(2) {
     transform: translateX(50px);
 }
@@ -74,7 +81,7 @@
     transform: translateX(100px);
 }
 
-.projects{
+.projects {
     margin-top: 50px;
     position: relative;
     padding: 0px 3%;
@@ -98,6 +105,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
 }
+
 .containerc .card {
     max-width: 900px;
     min-height: 400px;

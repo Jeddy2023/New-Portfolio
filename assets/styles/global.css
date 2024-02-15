@@ -8,6 +8,10 @@
     font-family: 'Livvic', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 button{
     cursor: pointer;
 }
@@ -16,6 +20,7 @@ body {
     background-color: black;
     color: white;
     overflow-x: hidden;
+    position: relative;
 }
 
 @font-face {
@@ -48,7 +53,7 @@ nav ul {
 }
 
 nav ul.active {
-    background-color: rgba(240, 224, 224, 0.233);
+    background-color: rgba(164, 164, 164, 0.251);
 }
 
 nav ul li a {
@@ -119,4 +124,28 @@ footer .social_container a {
 }
 footer .social_container i {
     font-size: 32px;
+}
+
+.scrollToTop{
+    height: 30px;
+    width: 30px;
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    right: 30px;
+    bottom: 70px;
+}
+.inner{
+    height: 80%;
+    width: 80%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
 }
