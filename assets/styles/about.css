@@ -3,7 +3,7 @@
 }
 
 .about h1 {
-    font-family: acorn;
+    font-family: var(--font-acorn);
     font-size: 50px;
     margin-bottom: 20px;
 }
@@ -15,8 +15,8 @@
 }
 
 .border{
-    border-left: 1px solid white;
-    border-bottom: 1px solid white;
+    border-left: 1px solid var(--color-black);
+    border-bottom: 1px solid var(--color-black);
     width: 2.5rem;
     height: 1.25rem;
     margin-left: 3%;
@@ -30,7 +30,7 @@
 }
 
 .skills h1 {
-    font-family: acorn;
+    font-family: var(--font-acorn);
     font-size: 2.5rem;
     margin-bottom: 20px;
     --tw-text-opacity: 1;
@@ -38,7 +38,7 @@
 }
 
 .skills h3 {
-    font-family: acorn;
+    font-family: var(--font-acorn);
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
@@ -55,10 +55,10 @@
     align-items: center;
     gap: 10px;
     width: 31%;
-    color: white;
+    color: var(--color-black);
     padding: 20px;
-    background-color: rgba(169, 169, 169, 0.041);
-    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.13);
+    background-color: var(--container-card-grey);
+    box-shadow: 0px 0px 60px var(--card-shadow);
 }
 
 .skills .skills_container .card i {
@@ -66,7 +66,7 @@
 }
 
 .skills .skills_container .card h2 {
-    font-family: acorn;
+    font-family: var(--font-acorn);
     font-size: 18px;
 }
 
@@ -78,7 +78,7 @@
 }
 
 .services h1 {
-    font-family: acorn;
+    font-family: var(--font-acorn);
     font-size: 50px;
     margin-bottom: 20px;
 }
@@ -91,7 +91,7 @@
 
 .services .service_container .card {
     min-height: 250px;
-    background-color: royalblue;
+    background-color: var(--color-primary);
     box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.13);
     padding: 30px;
     display: flex;
@@ -102,7 +102,7 @@
 }
 
 .services .service_container .card h2 {
-    font-family: acorn;
+    font-family: var(--font-acorn);
 }
 
 .services .service_container .card:nth-child(2) {
@@ -124,3 +124,4 @@
 .services .service_container .card:nth-child(5) {
     background: linear-gradient(180deg, #efa971, #e4cafe);
 }
+

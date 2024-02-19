@@ -29,7 +29,7 @@ function handleScrollToTop() {
     scrolltotop.style.display = "none";
   }
 
-  scrolltotop.style.background = `conic-gradient(white ${percentVal}%, grey ${percentVal}%)`;
+  scrolltotop.style.background = `conic-gradient(grey ${percentVal}%, white ${percentVal}%)`;
 }
 
 // Function to scroll to top when the scroll to top button is clicked
@@ -57,8 +57,75 @@ function hideLoader() {
   loader.style.display = "none";
 }
 
+
+
+// Selecting elements
+const themeBtn = document.querySelector("nav .theme-icon");
+const body = document.body;
+let darkModeEnabled = localStorage.getItem('darkmode');
+
+// Function to enable dark mode
+function enableDarkMode() {
+  body.classList.add("dark-theme");
+  localStorage.setItem('darkmode', 'enabled');
+  darkModeEnabled = true;
+}
+
+// Function to disable dark mode
+function disableDarkMode() {
+  body.classList.remove("dark-theme");
+  localStorage.removeItem('darkmode');
+  darkModeEnabled = false;
+}
+
+// Toggle dark mode
+function toggleDarkMode() {
+  if (darkModeEnabled) {
+    disableDarkMode();
+  } else {
+    enableDarkMode();
+  }
+}
+
+// Event listener for theme toggle button
+themeBtn.addEventListener('click', () => {
+  toggleDarkMode();
+  themeBtn.classList.toggle("dark", darkModeEnabled);
+});
+
+// Set initial theme on page load
+window.addEventListener('DOMContentLoaded', () => {
+  if (darkModeEnabled) {
+    enableDarkMode();
+    themeBtn.classList.add("dark");
+  }
+});
+
+
 // Event listeners
 window.addEventListener("scroll", handleScroll);
 window.addEventListener("scroll", handleScrollToTop);
 window.addEventListener("mousemove", handleCursorMovement);
 window.addEventListener("load", hideLoader);
+
+// if (lightMode !== "enabled") {
+//   enableLightMode()
+// }
+
+// themeBtn.addEventListener('click', () => {
+//   themeBtn.classList.toggle("dark")
+//   lightMode = localStorage.getItem('lightMode')
+//   if (lightMode !== "enabled") {
+//     enableLightMode()
+//   } else {
+//     disableLightMode()
+//   }
+// })
+
+
+
+
+
+// let darkModeStorage = localStorage.getItem('darkmode')
+// const themeBtn = document.querySelector("nav .theme-icon")
+// console.log(themeBtn)

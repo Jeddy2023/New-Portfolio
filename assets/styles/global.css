@@ -1,6 +1,33 @@
 @import url('https://fonts.cdnfonts.com/css/livvic');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --font-acorn: 'acorn', sans-serif;
+    --body-color: rgb(246, 246, 250);
+    /* --body-color: black; */
+    --special-background: #7950f2;
+    --color-white: white;
+    --color-black: black;
+    --color-grey: grey;
+    --color-primary: royalblue;
+    --active-nav-ul: rgba(164, 164, 164, 0.251);
+    --container-card-grey: white;
+    --skills-color: rgba(255, 255, 255, 0.372);
+    --card-shadow: whitesmoke;
+}
+.dark-theme{
+    --color-white: black;
+    --color-black: white;
+    --container-card-grey: rgba(169, 169, 169, 0.041);
+    --body-color: black;
+    --special-background: white;
+    --card-shadow: rgba(0, 0, 0, 0.13);
+}
+
+button{
+    border: none;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,22 +35,21 @@
     font-family: 'Livvic', sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
     cursor: none;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
 body {
-    background-color: black;
-    color: white;
+    background-color: var(--body-color);
+    color: var(--color-black);
     overflow-x: hidden;
     position: relative;
 }
-
 
 @font-face {
     font-family: acorn;
@@ -45,125 +71,175 @@ nav {
 
 nav ul {
     display: flex;
+    align-items: center;
     list-style: none;
     gap: 10px;
     border-radius: 50px;
-    padding: 18px 10px;
+    padding: 13px 10px;
     backdrop-filter: blur(20px);
     z-index: 100;
-    transition:  0.5s ease-in-out ;
+    transition: 0.5s ease-in-out;
 }
 
 nav ul.active {
-    background-color: rgba(164, 164, 164, 0.251);
+    background-color: var(--active-nav-ul);
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: var(--color-black);
     border-radius: 50px;
     padding: 10px 20px;
     font-family: 'Poppins', sans-serif;
 }
 
 nav ul li a.active {
-    background-color: whitesmoke;
-    color: black;
+    background-color: var(--special-background);
+    color: var(--color-white);
     font-weight: 600;
 }
 
-.container{
+.theme-icon {
+    overflow: hidden !important;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--special-background);
+    color: var(--color-white);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav .theme-icon i {
+    font-size: 19px;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+
+nav .theme-icon .bx-sun {
+    transform: translateX(0px);
+}
+
+nav .theme-icon .bx-moon {
+    transform: translateX(-50px);
+}
+
+nav .theme-icon.dark .bx-sun {
+    transform: translateX(50px);
+}
+
+nav .theme-icon.dark .bx-moon {
+    transform: translateX(0px);
+}
+
+.container {
     max-width: 1000px;
     margin: 0 auto;
 }
 
-.footer_wrapper{
+.footer_wrapper {
     padding: 0 3%;
 }
+
 footer {
     margin-top: 50px;
     padding-top: 30px;
     padding-bottom: 90px;
 }
+
 footer h1 {
-    font-family: acorn;
+    font-family: var(--font-acorn);
     font-size: 60px;
     margin-bottom: 10px;
     z-index: 3;
     position: relative;
-    color: white;
+    color: var(--color-black);
 }
+
 footer p {
     font-size: 20px;
     line-height: 1.4;
 }
+
 footer .bottom_container {
     display: grid;
     justify-content: space-between;
     margin-top: 30px;
     gap: 30px;
 }
+
 footer button {
     font-size: 18px;
-    background-color: white;
-    color: black;
+    background-color: var(--special-background);
+    color: var(--color-white);
     padding: 16px 60px;
     border-radius: 50px;
 }
+
 footer .social_container {
     list-style: none;
 }
+
 footer .social_container li {
     margin-bottom: 15px;
 }
+
 footer .social_container a {
     display: flex;
     align-items: center;
-    color: white;
+    color: var(--color-black);
     font-size: 20px;
     text-decoration: none;
     gap: 5px;
 }
+
 footer .social_container i {
     font-size: 32px;
 }
 
-.scrollToTop{
+.scrollToTop {
     height: 30px;
     width: 30px;
-    background: grey;
-    display: flex;
+    background: var(--color-grey);
+    display: none;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: white;
     cursor: pointer;
     position: fixed;
     right: 30px;
     bottom: 70px;
 }
-.inner{
+
+.inner {
     height: 80%;
     width: 80%;
-    background: black;
+    background: var(--color-white);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
 }
 
-.cursor-dot{
+.cursor-dot {
     width: 5px;
     height: 5px;
-    background-color: grey;
+    background-color: var(--color-grey);
 }
-.cursor-outline{
+
+.cursor-outline {
     width: 30px;
     height: 30px;
-    border: 2px solid grey;
+    border: 2px solid var(--color-grey);
 }
+
 .cursor-dot,
-.cursor-outline{
+.cursor-outline {
     position: fixed;
     top: 0;
     left: 0;
@@ -173,10 +249,10 @@ footer .social_container i {
     pointer-events: none;
 }
 
-#preloader{
+#preloader {
     background: #000 url('../images/spin7.gif') no-repeat center center;
     /* This background size is to reduce the size of the gif */
-    background-size: 15%; 
+    background-size: 15%;
     height: 100vh;
     width: 100%;
     position: fixed;

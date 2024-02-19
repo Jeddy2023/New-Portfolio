@@ -35,13 +35,13 @@
 }
 
 .hero .text button {
-    font-family: acorn;
-    background-color: white;
+    font-family: var(--font-acorn);
+    background-color: var(--special-background);
     margin-top: 30px;
     width: 250px;
     height: 60px;
     font-size: 18px;
-    color: black;
+    color: var(--color-white);
     border-width: initial;
     border-style: none;
     border-color: initial;
@@ -55,7 +55,7 @@
 }
 
 .hero .skills .card {
-    font-family: acorn;
+    font-family: var(--font-acorn);
     backdrop-filter: blur(20px);
     background-color: white;
     color: black;
@@ -94,7 +94,7 @@
 }
 
 .projects h1 {
-    font-family: acorn;
+    font-family: var(--font-acorn);
     font-size: 50px;
     margin-bottom: 20px;
 }
@@ -109,7 +109,7 @@
 .containerc .card {
     max-width: 900px;
     min-height: 400px;
-    background-color: rgba(169, 169, 169, 0.041);
+    background-color: var(--container-card-grey);
     display: flex;
     align-items: center;
     margin-bottom: 50px;
@@ -124,8 +124,8 @@
 
 .containerc .card .text h2 {
     font-size: 40px;
-    font-family: acorn;
-    color: var(--txt1);
+    font-family: var(--font-acorn);
+    color: var(--color-black);
 }
 
 .containerc .card .text p {
@@ -133,7 +133,7 @@
 }
 
 .containerc .card .text button {
-    font-family: acorn;
+    font-family: var(--font-acorn);
     margin-top: 40px;
     font-size: 18px;
     background-color: #7950f2;
