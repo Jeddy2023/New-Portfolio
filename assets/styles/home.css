@@ -183,6 +183,7 @@
     .hero {
         display: block;
         gap: 30px;
+        padding: 140px 3% 90px 3%;
     }
     .hero .text {
         margin-bottom: 30px;
