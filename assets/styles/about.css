@@ -44,8 +44,9 @@
 }
 
 .skills .skills_container {
-    display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 30px;
     margin-bottom: 20px;
 }
@@ -54,7 +55,6 @@
     display: flex;
     align-items: center;
     gap: 10px;
-    width: 31%;
     color: var(--color-black);
     padding: 20px;
     background-color: var(--container-card-grey);

@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     gap: 100px;
-    position: relative;
     padding: 170px 3% 90px 3%;
 }
 
@@ -163,4 +162,41 @@
     transform: scale(1.02);
     transition: all 0.3s ease-in-out 0s;
     border-radius: 50px;
+}
+
+@media screen and (max-width: 925px) {
+    .containerc {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 852px) {
+    .hero .text h1 {
+        font-size: 3.5rem;
+    }
+    .hero {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 707px) {
+    .hero {
+        display: block;
+        gap: 30px;
+    }
+    .hero .text {
+        margin-bottom: 30px;
+    }
+    .hero .skills .card{
+        transform: translateX(0px) !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    footer h1 {
+        font-size: 40px;
+    }
+    .projects h1 {
+        font-size: 40px;
+    }
 }
