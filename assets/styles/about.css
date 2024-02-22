@@ -75,6 +75,7 @@
     margin: 0px auto;
     margin-top: 70px;
     margin-bottom: 50px;
+    padding: 0px 3%;
 }
 
 .services h1 {
@@ -125,3 +126,25 @@
     background: linear-gradient(180deg, #efa971, #e4cafe);
 }
 
+
+@media screen and (max-width: 700px) {
+    .services .service_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .skills .skills_container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 460px) {
+    .services .service_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .skills .skills_container {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width: 435px) {
+    .about h1 {
+        font-size: 30px;
+    }
+}

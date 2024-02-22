@@ -304,3 +304,12 @@ footer .social_container i {
     position: fixed;
     z-index: 2000;
 }
+
+@media screen and (max-width: 400px) {
+    footer h1 {
+        font-size: 40px;
+    }
+    .projects h1 {
+        font-size: 40px;
+    }
+}
