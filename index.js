@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Function to handle header and go top button visibility on scroll
   function handleScroll() {
     if (window.scrollY >= 200) {
-      if (window.innerWidth > 400) {
+      if (window.innerWidth > 500) {
         header.classList.add("active");
       }
       goTopBtn.classList.add("active");
