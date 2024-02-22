@@ -1,5 +1,12 @@
 .about {
     padding: 150px 3% 10px 3% ;
+    position: relative;
+}
+
+@media screen and (max-width: 930px) {
+    .about {
+        overflow: hidden;
+    }
 }
 
 .about h1 {

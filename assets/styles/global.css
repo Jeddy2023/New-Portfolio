@@ -313,3 +313,40 @@ footer .social_container i {
         font-size: 40px;
     }
 }
+
+
+
+
+
+
+.background_linear {
+    /* display: grid;
+    grid-template-columns: repeat(1, 1fr); */
+    display: flex;
+    position: absolute;
+    filter: blur(150px); 
+    gap: 30px;
+    top: 30px;
+    left: 0px;
+}
+
+.background_linear .box {
+    background-color: royalblue;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.background_linear .box:nth-child(1) {
+    margin-top: 100px;
+    background-color: #7950f2;
+}
+
+.background_linear .box:nth-child(2) {
+    background-color: #6738f0;
+}
+
+.background_linear .box:nth-child(3) {
+    background-color: #b097f7;
+
+}

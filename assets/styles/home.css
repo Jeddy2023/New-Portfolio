@@ -5,6 +5,13 @@
     align-items: center;
     gap: 100px;
     padding: 170px 3% 90px 3%;
+    position: relative;
+}
+
+@media screen and (max-width: 930px) {
+    .hero {
+        overflow: hidden;
+    }
 }
 
 .hero .text {
