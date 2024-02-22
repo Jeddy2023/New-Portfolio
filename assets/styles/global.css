@@ -14,7 +14,8 @@
     --skills-color: rgba(255, 255, 255, 0.372);
     --card-shadow: whitesmoke;
 }
-.dark-theme{
+
+.dark-theme {
     --color-white: black;
     --color-black: white;
     --container-card-grey: rgba(169, 169, 169, 0.041);
@@ -23,7 +24,7 @@
     --card-shadow: rgba(0, 0, 0, 0.13);
 }
 
-button{
+button {
     border: none;
 }
 
@@ -118,6 +119,52 @@ nav .theme-icon i {
     font-size: 19px;
     position: absolute;
     transition: 0.3s ease-in-out;
+}
+
+.ti2{
+    display: none;
+}
+
+#harmburger {
+    font-size: 2.3rem;
+    display: none;
+}
+
+@media screen and (max-width: 400px) {
+    .theme-icon{
+        display: none;
+    }
+    .ti2{
+        position: absolute;
+        right: 10px;
+        display: flex;
+    }
+    nav ul {
+        flex-direction: column;
+        background-color: rgba(128, 128, 128, 0.326);
+        padding: 20px;
+        position: absolute;
+        right: 5px;
+        top: 12px;
+        transform-origin: top;
+        transform: scale(0);
+        transition: transform 0.5s ease;
+    }
+
+    nav ul.active {
+        display: flex;
+        transform: scale(1);
+    }
+
+    #harmburger {
+        display: block;
+        position: absolute;
+        left: 0;
+    }
+
+    nav ul li a {
+        padding: 8px 15px;
+    }
 }
 
 nav .theme-icon .bx-sun {
