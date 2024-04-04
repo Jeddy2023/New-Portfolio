@@ -142,7 +142,6 @@
     font-family: var(--font-acorn);
     margin-top: 40px;
     font-size: 18px;
-    background-color: #7950f2;
     color: white;
     border-width: initial;
     border-style: none;
@@ -162,9 +161,7 @@
 }
 
 .containerc .card .card_img_container img {
-    width: 100%;
-    max-width: 400px;
-    min-height: 100%;
+    height: 250px;
     object-fit: contain;
     transform: scale(1.02);
     transition: all 0.3s ease-in-out 0s;
